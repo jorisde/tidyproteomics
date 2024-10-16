@@ -28,7 +28,7 @@ normalize_EigenMS <- function(
 ) {
   
   # Check if EigenMS script exists
-  eigenms_script_path <- system.file("EigenMS.R", package = "jorisde/tidyproteomics") # Adjust package name
+  eigenms_script_path <- system.file("EigenMS.R", package = "tidyproteomics") # Adjust package name
   if (!file.exists(eigenms_script_path)) {
     stop("EigenMS.R script not found in the 'scripts' directory of the package.")
   }
